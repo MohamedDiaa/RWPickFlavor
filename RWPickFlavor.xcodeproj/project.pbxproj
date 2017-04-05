@@ -13,6 +13,7 @@
 		D90DD2961E94F61300D9A1DF /* RWPickFlavor.h in Headers */ = {isa = PBXBuildFile; fileRef = D90DD2881E94F61200D9A1DF /* RWPickFlavor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D90DD2A11E9504C500D9A1DF /* WOKer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90DD2A01E9504C500D9A1DF /* WOKer.swift */; };
 		D90DD2A41E9505AC00D9A1DF /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90DD2A31E9505AC00D9A1DF /* Item.swift */; };
+		D90DD2A71E9506DF00D9A1DF /* Screen Shot 2017-03-08 at 2.31.21 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = D90DD2A61E9506DF00D9A1DF /* Screen Shot 2017-03-08 at 2.31.21 PM.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		D90DD2951E94F61300D9A1DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D90DD2A01E9504C500D9A1DF /* WOKer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WOKer.swift; sourceTree = "<group>"; };
 		D90DD2A31E9505AC00D9A1DF /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		D90DD2A61E9506DF00D9A1DF /* Screen Shot 2017-03-08 at 2.31.21 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2017-03-08 at 2.31.21 PM.png"; sourceTree = "<group>"; };
 		E9E72774D432AE9DCBAFD695 /* Pods_RWPickFlavor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RWPickFlavor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC9687F5E3F24F4A6183E7F2 /* Pods-RWPickFlavor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RWPickFlavor.release.xcconfig"; path = "Pods/Target Support Files/Pods-RWPickFlavor/Pods-RWPickFlavor.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,6 +92,7 @@
 		D90DD2871E94F61200D9A1DF /* RWPickFlavor */ = {
 			isa = PBXGroup;
 			children = (
+				D90DD2A51E9506CF00D9A1DF /* Resources */,
 				D90DD2A21E9505A000D9A1DF /* Enitites */,
 				D90DD29F1E9504B400D9A1DF /* Model */,
 				D90DD2881E94F61200D9A1DF /* RWPickFlavor.h */,
@@ -121,6 +124,14 @@
 				D90DD2A31E9505AC00D9A1DF /* Item.swift */,
 			);
 			path = Enitites;
+			sourceTree = "<group>";
+		};
+		D90DD2A51E9506CF00D9A1DF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D90DD2A61E9506DF00D9A1DF /* Screen Shot 2017-03-08 at 2.31.21 PM.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		F571A768054A34BD75A45CFB /* Pods */ = {
@@ -230,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D90DD2A71E9506DF00D9A1DF /* Screen Shot 2017-03-08 at 2.31.21 PM.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
