@@ -11,6 +11,8 @@
 		D90DD28F1E94F61300D9A1DF /* RWPickFlavor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D90DD2851E94F61200D9A1DF /* RWPickFlavor.framework */; };
 		D90DD2941E94F61300D9A1DF /* RWPickFlavorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90DD2931E94F61300D9A1DF /* RWPickFlavorTests.swift */; };
 		D90DD2961E94F61300D9A1DF /* RWPickFlavor.h in Headers */ = {isa = PBXBuildFile; fileRef = D90DD2881E94F61200D9A1DF /* RWPickFlavor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D90DD2A11E9504C500D9A1DF /* WOKer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90DD2A01E9504C500D9A1DF /* WOKer.swift */; };
+		D90DD2A41E9505AC00D9A1DF /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90DD2A31E9505AC00D9A1DF /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +33,8 @@
 		D90DD28E1E94F61300D9A1DF /* RWPickFlavorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RWPickFlavorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D90DD2931E94F61300D9A1DF /* RWPickFlavorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RWPickFlavorTests.swift; sourceTree = "<group>"; };
 		D90DD2951E94F61300D9A1DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D90DD2A01E9504C500D9A1DF /* WOKer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WOKer.swift; sourceTree = "<group>"; };
+		D90DD2A31E9505AC00D9A1DF /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		E9E72774D432AE9DCBAFD695 /* Pods_RWPickFlavor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RWPickFlavor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC9687F5E3F24F4A6183E7F2 /* Pods-RWPickFlavor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RWPickFlavor.release.xcconfig"; path = "Pods/Target Support Files/Pods-RWPickFlavor/Pods-RWPickFlavor.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,6 +90,8 @@
 		D90DD2871E94F61200D9A1DF /* RWPickFlavor */ = {
 			isa = PBXGroup;
 			children = (
+				D90DD2A21E9505A000D9A1DF /* Enitites */,
+				D90DD29F1E9504B400D9A1DF /* Model */,
 				D90DD2881E94F61200D9A1DF /* RWPickFlavor.h */,
 				D90DD2891E94F61200D9A1DF /* Info.plist */,
 			);
@@ -99,6 +105,22 @@
 				D90DD2951E94F61300D9A1DF /* Info.plist */,
 			);
 			path = RWPickFlavorTests;
+			sourceTree = "<group>";
+		};
+		D90DD29F1E9504B400D9A1DF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D90DD2A01E9504C500D9A1DF /* WOKer.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D90DD2A21E9505A000D9A1DF /* Enitites */ = {
+			isa = PBXGroup;
+			children = (
+				D90DD2A31E9505AC00D9A1DF /* Item.swift */,
+			);
+			path = Enitites;
 			sourceTree = "<group>";
 		};
 		F571A768054A34BD75A45CFB /* Pods */ = {
@@ -175,6 +197,7 @@
 					D90DD2841E94F61200D9A1DF = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = Y38R5ALMYY;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					D90DD28D1E94F61300D9A1DF = {
@@ -257,6 +280,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D90DD2A41E9505AC00D9A1DF /* Item.swift in Sources */,
+				D90DD2A11E9504C500D9A1DF /* WOKer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +407,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B5F7CC006527045D444C5B63 /* Pods-RWPickFlavor.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = Y38R5ALMYY;
@@ -394,6 +420,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.WOK.QuizKing.RWPickFlavor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -402,6 +429,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EC9687F5E3F24F4A6183E7F2 /* Pods-RWPickFlavor.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = Y38R5ALMYY;
@@ -421,6 +449,7 @@
 		D90DD29D1E94F61300D9A1DF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = Y38R5ALMYY;
 				INFOPLIST_FILE = RWPickFlavorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -433,6 +462,7 @@
 		D90DD29E1E94F61300D9A1DF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = Y38R5ALMYY;
 				INFOPLIST_FILE = RWPickFlavorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

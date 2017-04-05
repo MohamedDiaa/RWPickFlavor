@@ -11,7 +11,7 @@ s.requires_arc = true
 s.version = "0.1.0"
 
 # 3
-s.license = { :type => "MIT", :file => "LICENSE" }
+#s.license = { :type => "MIT", :file => "~/Documents/Libraries/RWPickFlavor/LICENSE" }
 
 # 4 - Replace with your name and e-mail address
 s.author = { "Mohamed Diaa" => "mohamedddiaa1988@hotmail.com" }
@@ -22,13 +22,13 @@ s.homepage = "https://github.com/MohamedDiaa/RWPickFlavor"
 
 
 # 6 - Replace this URL with your own Git URL from "Quick Setup"
-s.source = { :git => "https://github.com/MohamedDiaa/RWPickFlavor.git", :tag => "0.1"}
+s.source = { :git => "https://github.com/MohamedDiaa/RWPickFlavor.git"}
 
 
 # 7
 s.framework = "UIKit"
-s.dependency 'Alamofire', '~> 2.0'
-s.dependency 'MBProgressHUD', '~> 0.9.0'
+s.dependency 'Alamofire'
+s.dependency 'MBProgressHUD'
 
 # 8
 s.source_files = "RWPickFlavor/**/*.{swift}"
